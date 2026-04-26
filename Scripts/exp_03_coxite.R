@@ -9,7 +9,7 @@ X <- X / rowSums(X)
 
 # log(df$porosity)/ (100 - df$porosity) is commonly used for this dataset as per standard CoDa literature
 
-y_raw <- log(df$porosity)/ (100 - df$porosity)     
+y_raw <- log((df$porosity)/ (100 - df$porosity))     
 
 res<-ipf_coda_reg(
   predictor=X,
