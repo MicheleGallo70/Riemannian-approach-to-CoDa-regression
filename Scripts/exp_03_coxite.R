@@ -2,7 +2,7 @@
 df<-data.frame(coxite)
 # Extract the compositional response (Y) and scalar predictor (x_raw)
 # to match the function arguments in the rest of the script
-X <- as.matrix(df[, 1:6])
+X <- as.matrix(df[, 1:5])
 
 # Ensure compositions sum to 1 (closure operation), just to be safe
 X <- X / rowSums(X) 
